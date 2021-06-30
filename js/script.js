@@ -26,13 +26,15 @@ var sDWind = document.getElementById('sixth-d-wind')
 var sDHum = document.getElementById('sixth-d-hum')
 var sDUvi = document.getElementById('sixth-d-uv')
 
+
 const APIKey = "6ebf25cc38abf50137f1b884c40624f2";
 
 fetchButton.addEventListener('click', function(){
     event.preventDefault()
     const city = document.querySelector('input').value;
-    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
     fetch(url)
+    
         .then(function (response) {
             return response.json();
         })
@@ -45,6 +47,7 @@ fetchButton.addEventListener('click', function(){
                 return response.json();
             })
             .then(function(data) {
+                console.log(data)
                 wind.textContent = "Wind: " + data.current.wind_speed + " MPH";
                 humid.textContent = "Humidity: " + data.current.humidity + " %";
                 temp.textContent = "Temp: " + data.current.temp + " °F";
