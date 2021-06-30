@@ -1,5 +1,5 @@
 var today = moment();
-document.getElementById('current-date', ).textContent =  today.format("MMM Do, YYYY");
+document.getElementById('current-date').textContent =  today.format("(L)");
 var fetchButton = document.querySelector('#fetch-button');
 console.log(fetchButton)
 var temp = document.getElementById('current-temp')
