@@ -32,7 +32,7 @@ const APIKey = "6ebf25cc38abf50137f1b884c40624f2";
 fetchButton.addEventListener('click', function(){
     event.preventDefault()
     const city = document.querySelector('input').value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
     fetch(url)
     
         .then(function (response) {
@@ -42,7 +42,7 @@ fetchButton.addEventListener('click', function(){
             var lat = data.coord.lat;
             var lon = data.coord.lon;
             
-            fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly,alerts&appid=${APIKey}`)
+            fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly,alerts&appid=${APIKey}`)
             .then(function (response) {
                 return response.json();
             })
