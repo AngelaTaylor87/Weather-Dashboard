@@ -1,5 +1,5 @@
 var today = moment();
-document.getElementById('current-date').textContent =  today.format("(L)");
+document.getElementById('current-date').textContent =  today.format("L");
 var fetchButton = document.querySelector('#fetch-button');
 var temp = document.getElementById('current-temp')
 var wind = document.getElementById('current-wind')
