@@ -27,7 +27,6 @@ var sDHum = document.getElementById('sixth-d-hum')
 var sDUvi = document.getElementById('sixth-d-uv')
 
 const APIKey = "6ebf25cc38abf50137f1b884c40624f2";
-const click = document.getElementById('click-me');
 
 fetchButton.addEventListener('click', function(){
     event.preventDefault()
