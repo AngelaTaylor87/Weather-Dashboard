@@ -5,6 +5,7 @@ var temp = document.getElementById('current-temp')
 var wind = document.getElementById('current-wind')
 var humid = document.getElementById('current-hum')
 var uvi = document.getElementById('uv-index')
+
 var nDTemp = document.getElementById('n-d-temp')
 var nDWind = document.getElementById('n-d-wind')
 var nDHum = document.getElementById('n-d-hum')
@@ -52,6 +53,7 @@ fetchButton.addEventListener('click', function(){
                 humid.textContent = "Humidity: " + data.current.humidity + " %";
                 temp.textContent = "Temp: " + data.current.temp + " °F";
                 uvi.textContent = "Uv Index: " + data.current.uvi;
+        
                 nDTemp.textContent = "Temp: " + data.daily[1].temp.day + " °F";
                 nDWind.textContent = "Wind: " + data.daily[1.].wind_speed + " MPH";
                 nDHum.textContent = "Humidity: " + data.daily[1].humidity + " %";
