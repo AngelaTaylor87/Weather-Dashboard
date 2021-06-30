@@ -1,7 +1,6 @@
 var today = moment();
 document.getElementById('current-date').textContent =  today.format("(L)");
 var fetchButton = document.querySelector('#fetch-button');
-console.log(fetchButton)
 var temp = document.getElementById('current-temp')
 var wind = document.getElementById('current-wind')
 var humid = document.getElementById('current-hum')
@@ -47,7 +46,6 @@ fetchButton.addEventListener('click', function(){
                 return response.json();
             })
             .then(function(data) {
-                console.log(data);
                 wind.textContent = "Wind: " + data.current.wind_speed + " MPH";
                 humid.textContent = "Humidity: " + data.current.humidity + " %";
                 temp.textContent = "Temp: " + data.current.temp + " °F";
