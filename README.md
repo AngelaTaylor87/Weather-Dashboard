@@ -1,7 +1,11 @@
 # Weather-Dashboard
+
 homework6
 
 # ScreenShot
+
+![_Users_angelataylor_projects_Weather-Dashboard_index html_](https://user-images.githubusercontent.com/82851741/124006620-1b3e6200-d9a0-11eb-99ec-d69c293ac600.png)
+
 
 # Description 
 
