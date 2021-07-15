@@ -47,7 +47,7 @@ fetchButton.addEventListener('click', function(){
                 return response.json();
             })
             .then(function(data) {
-                console.log
+                console.log(data)
                 wind.textContent = "Wind: " + data.current.wind_speed + " MPH";
                 humid.textContent = "Humidity: " + data.current.humidity + " %";
                 temp.textContent = "Temp: " + data.current.temp + " °F";
